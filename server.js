@@ -1,9 +1,11 @@
 const express = require("express");
 const app = express();
+const mongoose = require("mongoose");
 const session = require("express-session");
+const bodyParser = require("body-parser");
 const cors = require('cors');
 const path = require('path');
-const config = require("./config/config");
+const config = require("./config/keys.js");
 const ImageRouter = require("./routes/api-routes");
 const PORT = process.env.PORT || 5000;
 
