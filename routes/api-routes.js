@@ -1,8 +1,12 @@
 const express = require("express");
-const mongoose = require("mongoose");
-const app = express();
-//const http = require("http").createServer(app);
-//const io = require("socket.io")(http);
-const PORT = process.env.PORT || 5000;
-const path = require("path");
-const cors = require("cors");
+const Axios = require("axios");
+const ImageRouter = express.Router();
+
+//load Image model
+const Image = require("../models/Image.js");
+
+ImageRouter.get("/", async(req,res) => {
+    res.send("GET request to homepage")
+});
+
+module.exports = ImageRouter;
