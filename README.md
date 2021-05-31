@@ -1,4 +1,3 @@
-# A project by Michelle Tran
 ## _Open Source Illustration Library_
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
@@ -48,3 +47,5 @@ For production environments...
 npm install 
 npm run start
 ```
+
+A project by Michelle Tran
