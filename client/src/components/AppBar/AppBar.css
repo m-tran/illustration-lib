@@ -1,0 +1,19 @@
+.AppBar {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	justify-content: space-between;
+	font-size: calc(10px + 2vmin);
+	padding: 0 4rem 1rem 4rem;
+	margin: 0;
+	color: black;
+}
+
+.AppBar p, .AppBar ul {
+	margin-top: 0;
+}
+
+.AppBar ul {
+	list-style: none;
+}
+  

@@ -8,8 +8,8 @@ if (module.hot) module.hot.accept();
 
 /* eslint-disable no-undef */
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root'),
+	<React.StrictMode>
+		<App />
+	</React.StrictMode>,
+	document.getElementById('root'),
 );
