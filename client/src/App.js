@@ -2,7 +2,7 @@ import React from 'react';
 
 import AppBar from './components/AppBar/index';
 import IntroCard from './components/Card/IntroCard';
-import Button from './components/Button/Button';
+import BlueButton from './components/Button/BlueButton';
 
 import './App.css';
 
@@ -16,7 +16,7 @@ function App() {
 				<div />
 				<div>
 					<IntroCard />
-					<Button link="#" text="Begin" />
+					<BlueButton theme="blue" link="#" text="Begin" />
 				</div>
 			</div>
 		</div>
