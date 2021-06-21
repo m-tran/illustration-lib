@@ -10,7 +10,7 @@
 	flex-direction: row;
 	align-items: baseline;
 	justify-content: flex-start;
-	font-size: calc(10px + 2vmin);
+	font-size: calc(8px + 2vmin);
 	padding: 0 4rem 1rem 4rem;
 	margin: 0;
 	color: white;
@@ -21,7 +21,7 @@
 	flex-direction: row;
 	align-items: baseline;
 	justify-content: flex-end;
-	font-size: calc(10px + 2vmin);
+	font-size: calc(8px + 2vmin);
 	padding: 0 4rem 1rem 4rem;
 	margin: 0;
 	color: black;
