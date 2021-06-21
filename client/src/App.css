@@ -1,5 +1,15 @@
-.App-ui {
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+.App {
+	height: 100%;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 	grid-gap: 16px;
+}
+
+header {
+	grid-column: 1/-1;
 }

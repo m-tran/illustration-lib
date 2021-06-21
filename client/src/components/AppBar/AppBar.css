@@ -1,8 +1,26 @@
 .AppBar {
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+	grid-gap: 16px;
+}
+
+.AppBarBl {
 	display: flex;
 	flex-direction: row;
 	align-items: baseline;
-	justify-content: space-between;
+	justify-content: flex-start;
+	font-size: calc(10px + 2vmin);
+	padding: 0 4rem 1rem 4rem;
+	margin: 0;
+	color: white;
+}
+
+.AppBarWh {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	justify-content: flex-end;
 	font-size: calc(10px + 2vmin);
 	padding: 0 4rem 1rem 4rem;
 	margin: 0;

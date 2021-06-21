@@ -5,6 +5,7 @@ const theme = {
 		white: '#ffffff',
 		grey: '#404040',
 		linkHover: '#ffffff',
+		black: '#000000',
 	},
 	sizes: {
 		sm: '1rem',
