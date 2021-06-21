@@ -3,32 +3,3 @@
 	grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));
 	grid-gap: 16px;
 }
-
-/*
- * Web Fonts from colophon-foundry.org
- *
- * The fonts included in this stylesheet are subject to the End User License you purchased
- * from Colophon Foundry. The fonts are protected under domestic and international trademark and
- * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
- * distributing this font software.
- *
- * (c) 2021 Colophon Foundry
- *
- * Licenced to Michelle Tran 
- */
-
- @font-face {
-    font-family: 'monosten-regular-pro';
-    src: local('monosten-regular-pro'), url(./fonts/monosten-regular-pro.eot);
-	src: local('monosten-regular-pro'), url(./fonts/monosten-regular-pro.eot?#iefix) format('embedded-opentype'),
-	local('monosten-regular-pro'), url(./fonts/monosten-regular-pro.woff2) format('woff2'),
-	local('monosten-regular-pro'), url(./fonts/monosten-regular-pro.woff) format('woff'),
-	local('monosten-regular-pro'), url(./fonts/monosten-regular-pro.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-* {
-	font-size: 100%;
-	font-family: 'monosten-regular-pro', sans-serif;
-   }

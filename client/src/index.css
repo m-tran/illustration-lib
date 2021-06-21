@@ -1,13 +1,31 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*
+ * Web Fonts from colophon-foundry.org
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Colophon Foundry. The fonts are protected under domestic and international trademark and
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2021 Colophon Foundry
+ *
+ * Licenced to Michelle Tran 
+ */
+
+ @font-face {
+    font-family: 'monosten-regular-pro';
+    src: local('monosten-regular-pro'), url(./fonts/monosten-regular-pro.eot);
+	src: local('monosten-regular-pro'), url(./fonts/monosten-regular-pro.eot?#iefix) format('embedded-opentype'),
+	local('monosten-regular-pro'), url(./fonts/monosten-regular-pro.woff2) format('woff2'),
+	local('monosten-regular-pro'), url(./fonts/monosten-regular-pro.woff) format('woff'),
+	local('monosten-regular-pro'), url(./fonts/monosten-regular-pro.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+* {
+	margin: 0;
+	font-size: 100%;
+	font-family: 'monosten-regular-pro', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+   }
