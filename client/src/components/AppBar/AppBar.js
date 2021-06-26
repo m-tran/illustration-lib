@@ -17,7 +17,7 @@ function AppBar() {
 			</Blbg>
 			<div className="AppBarWh">
 				<ul>
-					<li>learn</li>
+					<li>create</li>
 					<li>contact</li>
 				</ul>
 			</div>

@@ -1,0 +1,22 @@
+.BlackHalf {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 0px;
+	height: 90vh;
+}
+
+.WhiteCard {
+	grid-column: 3 / -1;
+	grid-row: 2 / 4;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.imgCtn {
+	background-color: white;
+	width: 75%;
+	height: 50%;
+	margin: 1em 0 1em 1em;
+}

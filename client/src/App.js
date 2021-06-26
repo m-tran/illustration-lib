@@ -1,8 +1,10 @@
 import React from 'react';
 
 import AppBar from './components/AppBar/AppBar';
-import BlackCard from './components/Card/BlackCard';
-import WindowCard from './components/Card/WindowCard';
+import BlackHalf from './components/Card/BlackHalf';
+import WhiteHalf from './components/Card/WhiteHalf';
+
+import temp from './images/temp.png';
 
 import './App.css';
 
@@ -12,10 +14,8 @@ function App() {
 			<header>
 				<AppBar />
 			</header>
-			<BlackCard />
-			<div>
-				<WindowCard bgcolor="blue" color="white" title="openIL" body="(open source) illustration library" link="#" text="Begin ->" />
-			</div>
+			<BlackHalf image={temp} alt="intro" />
+			<WhiteHalf />
 		</div>
 	);
 }
