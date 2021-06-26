@@ -14,7 +14,7 @@ function App() {
 			</header>
 			<BlackCard />
 			<div>
-				<WindowCard bgcolor="blue" color="white" title="openIL" body="(open source) illustration library" link="#" text="Begin" />
+				<WindowCard bgcolor="blue" color="white" title="openIL" body="(open source) illustration library" link="#" text="Begin ->" />
 			</div>
 		</div>
 	);
