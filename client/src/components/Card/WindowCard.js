@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Button from '../AppBar/Button';
+import Button from '../Button';
 
 export default function WindowCard({
 	title, body, bgcolor, color, link, text,
