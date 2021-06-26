@@ -1,11 +1,10 @@
 import React from 'react';
 
 import AppBar from './components/AppBar/AppBar';
-import IntroCard from './components/Card/IntroCard';
-import BlueButton from './components/Button/BlueButton';
+import BlackCard from './components/Card/BlackCard';
+import WindowCard from './components/Card/WindowCard';
 
 import './App.css';
-import BlackCard from './components/Card/BlackCard';
 
 function App() {
 	return (
@@ -15,8 +14,7 @@ function App() {
 			</header>
 			<BlackCard />
 			<div>
-				<IntroCard />
-				<BlueButton theme="blue" link="#" text="Begin" />
+				<WindowCard bgcolor="blue" color="white" title="openIL" body="(open source) illustration library" link="#" text="Begin" />
 			</div>
 		</div>
 	);

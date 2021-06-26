@@ -9,16 +9,16 @@ const Btn = styled.button`
 	margin: 1em;
 	padding: 0.25em 1em;
 	border: none;
-
-	/* Color the background and text with theme */
-	background-color: ${getColor('blue')};
-	color: ${getColor('white')};
+	background-color: ${(props) => (getColor(props.bgcolor))};
+	color: ${(props) => (getColor(props.color))};
 `;
 
-export default function BlueButton({ link, text }) {
+export default function Button({
+	bgcolor, color, link, text,
+}) {
 	return (
 		<div>
-			<Btn onClick={link}>
+			<Btn bgcolor={bgcolor} color={color} onClick={link}>
 				{text}
 			</Btn>
 		</div>
