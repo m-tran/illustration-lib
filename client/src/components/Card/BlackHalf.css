@@ -20,3 +20,9 @@
 	height: 50%;
 	margin: 1em 0 1em 1em;
 }
+
+.imgFit {
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+}

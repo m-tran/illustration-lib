@@ -17,7 +17,7 @@ export default function BlackHalf({ image, alt }) {
 		<BgCard>
 			<div className="WhiteCard">
 				<div className="imgCtn">
-					<img src={image} alt={alt} />
+					<img className="imgFit" src={image} alt={alt} />
 				</div>
 			</div>
 		</BgCard>
