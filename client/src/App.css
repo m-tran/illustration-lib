@@ -18,6 +18,14 @@ html, body {
 
 header {
 	grid-column: 1/-1;
-	grid-row: 1/-1;
+	grid-row: 1/2;
 	height: 10vh;
+}
+
+.Landing {
+	grid-column: 1/-1;
+	grid-row: 2/3;
+	height: 90vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
