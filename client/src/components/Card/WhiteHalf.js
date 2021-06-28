@@ -4,8 +4,6 @@ import { getColor } from '../../Theme';
 
 import WindowCard from './WindowCard';
 
-import './WhiteHalf.css';
-
 const BgCard = styled.div`
 	background-color: ${getColor('white')};
 	height: 100%;
