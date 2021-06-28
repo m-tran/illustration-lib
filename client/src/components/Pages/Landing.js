@@ -9,7 +9,7 @@ import '../../App.css';
 
 export default function Landing() {
   return (
-	<div className="Landing">
+	<div className="container">
 		<BlackHalf image={temp} alt="intro" />
 		<WhiteHalf />
 	</div>

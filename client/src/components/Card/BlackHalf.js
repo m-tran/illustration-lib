@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { getColor } from '../../Theme';
 
-import './Card.css';
 import './BlackHalf.css';
 
 const BgCard = styled.div`

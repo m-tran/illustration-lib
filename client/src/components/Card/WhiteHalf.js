@@ -4,7 +4,6 @@ import { getColor } from '../../Theme';
 
 import WindowCard from './WindowCard';
 
-import './Card.css';
 import './WhiteHalf.css';
 
 const BgCard = styled.div`
