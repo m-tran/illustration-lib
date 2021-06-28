@@ -1,7 +1,13 @@
 import React from 'react';
+import {
+	BrowserRouter as Router,
+	Route,
+	Switch,
+  } from 'react-router-dom';
 
 import AppBar from './components/AppBar/AppBar';
 import Landing from './components/Pages/Landing';
+import Create from './components/Pages/Create';
 
 import './App.css';
 
@@ -11,7 +17,12 @@ function App() {
 			<header>
 				<AppBar />
 			</header>
-			<Landing />
+			<Router>
+				<Switch>
+					<Route exact path="/"><Landing /></Route>
+					<Route path="/create"><Create /></Route>
+				</Switch>
+			</Router>
 		</div>
 	);
 }

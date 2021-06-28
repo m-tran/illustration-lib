@@ -14,11 +14,11 @@ const Btn = styled.button`
 `;
 
 export default function Button({
-	bgcolor, color, link, text,
+	bgcolor, color, text,
 }) {
 	return (
 		<div>
-			<Btn bgcolor={bgcolor} color={color} onClick={link}>
+			<Btn bgcolor={bgcolor} color={color}>
 				{text}
 			</Btn>
 		</div>

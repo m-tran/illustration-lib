@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { getColor, getSize } from '../../Theme';
 
@@ -23,7 +24,7 @@ const BrowserBody = styled.div`
 `;
 
 export default function WindowCard({
-	title, body, bgcolor, color, link, text,
+	title, body, bgcolor, color, text,
 }) {
 	return (
 		<div>
@@ -34,7 +35,9 @@ export default function WindowCard({
 				<BrowserBody>
 					{body}
 				</BrowserBody>
-				<Button bgcolor={bgcolor} color={color} link={link} text={text} />
+				<Link to="/create">
+					<Button bgcolor={bgcolor} color={color} text={text} />
+				</Link>
 			</Window>
 		</div>
 	);
