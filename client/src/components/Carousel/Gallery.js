@@ -50,9 +50,6 @@ export default function Gallery({ items }) {
 	};
 	const syncActiveIndex = ({ item }) => setActiveIndex(item);
 
-	console.log({ items });
-	console.log(activeIndex);
-
 	return [
 		<div>
 			<RoundButton bgcolor="white" image={prev} onClick={slidePrev} />
