@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { getColor, getSize } from '../Theme';
+import { getColor, getSize } from '../../Theme';
 
 const Btn = styled.button`
 	font-family: inherit;

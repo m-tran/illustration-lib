@@ -1,15 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { getColor, getSize } from '../../Theme';
 
-import Button from '../Buttons/Button';
+import Gallery from '../Carousel/Gallery';
 
 const Window = styled.div`
 	font-family: inherit;
 	margin: 2em;
 	border: 1px solid ${getColor('black')};
 	background-color: ${getColor('white')};
+	max-width: 654px;
 `;
 
 const BrowserTab = styled.div`
@@ -20,11 +21,13 @@ const BrowserTab = styled.div`
 
 const BrowserBody = styled.div`
 	font-size: ${getSize('md')};
-	padding: 1em 4em 1em 0.5em;
+	padding: 1em;
+	max-width: 654px;
+	display: flex;
 `;
 
-export default function WindowCard({
-	title, body, bgcolor, color, text,
+export default function SelectorCard({
+	title, items,
 }) {
 	return (
 		<div>
@@ -33,11 +36,8 @@ export default function WindowCard({
 					{title}
 				</BrowserTab>
 				<BrowserBody>
-					{body}
+					<Gallery items={items} />
 				</BrowserBody>
-				<Link to="/create">
-					<Button bgcolor={bgcolor} color={color} text={text} />
-				</Link>
 			</Window>
 		</div>
 	);
