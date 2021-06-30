@@ -14,6 +14,9 @@ const RoundBtn = styled.button`
 	border: 1px solid ${(props) => (getColor(props.color))};
 	border-radius: 50%;
 	background-color: ${(props) => (getColor(props.bgcolor))};
+	&:hover {
+		border: 3px solid ${getColor('blue')};
+	}
 `;
 
 export default function RoundButton({

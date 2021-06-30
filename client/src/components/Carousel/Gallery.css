@@ -9,6 +9,10 @@
 	margin: 0.25em;
 }
 
+.alice-carousel__stage-item:hover {
+	border: 3px solid #0070ff;
+}
+
 .alice-carousel__stage-item img {
 	width: 100%;
 	height: 100%;
