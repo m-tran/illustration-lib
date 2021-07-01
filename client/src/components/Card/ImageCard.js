@@ -11,10 +11,12 @@ const ImgCtn = styled.div`
 	width: 45vw;
 `;
 
-export default function ImageCard() {
+export default function ImageCard({ image }) {
   return (
 	<div className="ImageCard">
-		<ImgCtn />
+		<ImgCtn>
+			<img src={image} alt="" />
+		</ImgCtn>
 	</div>
   );
 }
