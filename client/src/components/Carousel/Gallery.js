@@ -13,26 +13,6 @@ const responsive = {
 	1024: { items: 3 },
 };
 
-// const createItems = (length, [handleClick]) => {
-//     let deltaX = 0;
-//     let difference = 0;
-//     const swipeDelta = 20;
-
-//     return Array.from({ length }).map((item, i) => (
-//         <div
-// 			aria-hidden="true"
-//             data-value={i + 1}
-//             className="item"
-//             onMouseDown={(e) => { (deltaX = e.pageX); }}
-//             onMouseUp={(e) => { (difference = Math.abs(e.pageX - deltaX)); }}
-// 			onClick={() => (difference < swipeDelta) && handleClick(i)}
-// 			onKeyDown={() => (difference < swipeDelta) && handleClick(i)}
-//         >
-//             <span className="item-inner" />
-//         </div>
-//     ));
-// };
-
 export default function Gallery({ items }) {
 	const [activeIndex, setActiveIndex] = useState(0);
 	// const [items] = useState(createItems(5, [setActiveIndex]));

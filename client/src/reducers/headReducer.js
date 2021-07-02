@@ -1,13 +1,13 @@
 const initialState = {
-	imgUrl: '',
+	headUrl: '',
 };
 
-export default function imgReducer(state = initialState, action) {
+export default function headReducer(state = initialState, action) {
 	switch (action.type) {
 		case 'SELECTED':
 			return {
 				...state,
-				imgUrl: action.payload,
+				headUrl: action.payload,
 			};
 		default:
 			return state;

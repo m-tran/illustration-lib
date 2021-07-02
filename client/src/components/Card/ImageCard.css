@@ -3,3 +3,9 @@
 	justify-content: center;
 	align-items: center;
 }
+
+.selectedImg {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}

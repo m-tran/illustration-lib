@@ -1,24 +1,27 @@
 import React, { useState } from 'react';
 import 'react-alice-carousel/lib/alice-carousel.css';
-import imgReducer from '../reducers/imgReducer';
+import headReducer from '../reducers/headReducer';
+import headStore from '../store/headStore';
 
 const handleDragStart = (e) => e.preventDefault();
 
-export default function imageHandler(images) {
+export default function headHandler(images) {
 	let imgArray = [];
 
 	const [url, setUrl] = useState('');
 
 	const handleOnClick = (e) => {
-		// setUrl(e);
 		const action = {
 			type: 'SELECTED',
-			payload: {
-				imgUrl: e,
-			},
+			payload: e,
 		};
-		const newUrl = imgReducer(url, action);
+		const newUrl = headReducer(url, action);
 		setUrl(newUrl);
+
+		headStore.dispatch({
+			type: 'SELECTED',
+			payload: newUrl,
+		});
 	};
 
 	if (images !== undefined) {

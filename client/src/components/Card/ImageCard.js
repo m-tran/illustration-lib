@@ -12,11 +12,14 @@ const ImgCtn = styled.div`
 `;
 
 export default function ImageCard({ image }) {
-  return (
-	<div className="ImageCard">
-		<ImgCtn>
-			<img src={image} alt="" />
-		</ImgCtn>
-	</div>
-  );
+	const img = { image };
+	console.log(img.image);
+
+	return (
+		<div className="ImageCard">
+			<ImgCtn>
+				<img className="selectedImg" src={img.image} alt="" />
+			</ImgCtn>
+		</div>
+	);
 }
