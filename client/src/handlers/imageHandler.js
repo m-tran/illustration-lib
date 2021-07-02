@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import 'react-alice-carousel/lib/alice-carousel.css';
+import imgReducer from '../reducers/imgReducer';
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -9,7 +10,15 @@ export default function imageHandler(images) {
 	const [url, setUrl] = useState('');
 
 	const handleOnClick = (e) => {
-		setUrl(e);
+		// setUrl(e);
+		const action = {
+			type: 'SELECTED',
+			payload: {
+				imgUrl: e,
+			},
+		};
+		const newUrl = imgReducer(url, action);
+		setUrl(newUrl);
 	};
 
 	if (images !== undefined) {
