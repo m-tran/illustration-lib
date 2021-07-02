@@ -9,6 +9,7 @@ const ImgCtn = styled.div`
 	border: 1px solid ${getColor('black')};
 	height: 75vh;
 	width: 45vw;
+	position: relative;
 `;
 
 export default function ImageCard({ image }) {
@@ -18,7 +19,7 @@ export default function ImageCard({ image }) {
 	return (
 		<div className="ImageCard">
 			<ImgCtn>
-				<img className="selectedImg" src={img.image} alt="" />
+				<img className="selectedImg" id="head" src={img.image} alt="" />
 			</ImgCtn>
 		</div>
 	);
