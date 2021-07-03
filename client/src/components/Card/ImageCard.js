@@ -26,8 +26,6 @@ export default function ImageCard({ head, body, legs }) {
 		headImg.head = bobWavy;
 	}
 
-	console.log(headImg);
-
 	if (bodyImg.body === undefined) {
 		bodyImg.body = jacket;
 	}
