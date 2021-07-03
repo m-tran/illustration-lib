@@ -15,3 +15,11 @@
 	z-index: 30;
 }
 
+#body {
+	z-index: 20;
+}
+
+#legs {
+	z-index: 10;
+}
+
