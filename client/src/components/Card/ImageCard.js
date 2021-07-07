@@ -6,7 +6,6 @@ import bobWavy from '../../images/heads/wavy-bob.png';
 import jacket from '../../images/body/jacket.png';
 import pants from '../../images/bottom/pants.png';
 
-
 import './ImageCard.css';
 
 const ImgCtn = styled.div`
@@ -17,13 +16,24 @@ const ImgCtn = styled.div`
 	position: relative;
 `;
 
-export default function ImageCard({ head, body, legs }) {
+export default function ImageCard({
+	head, headAlt, body, legs,
+}) {
 	const headImg = { head };
+	let headLink = headImg.head;
 	const bodyImg = { body };
 	const legsImg = { legs };
 
-	if (headImg.head === undefined) {
-		headImg.head = bobWavy;
+	const headCAlt = { headAlt };
+
+	if (headLink !== undefined) {
+		headLink = `/images/heads/${headImg.head}`;
+	} else {
+		headLink = bobWavy;
+	}
+
+	if (headCAlt.headAlt === undefined) {
+		headCAlt.headAlt = 'bobWavy';
 	}
 
 	if (bodyImg.body === undefined) {
@@ -37,7 +47,7 @@ export default function ImageCard({ head, body, legs }) {
 	return (
 		<div className="ImageCard">
 			<ImgCtn>
-				<img className="selectedImg" id="head" src={headImg.head} alt="head" />
+				<img className="selectedImg" id="head" src={headLink} alt={headCAlt.headAlt} />
 				<img className="selectedImg" id="body" src={bodyImg.body} alt="body" />
 				<img className="selectedImg" id="legs" src={legsImg.legs} alt="legs" />
 			</ImgCtn>

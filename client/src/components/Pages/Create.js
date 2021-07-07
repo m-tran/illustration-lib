@@ -16,6 +16,7 @@ import headHandler from '../../handlers/headHandler';
 
 export default function Create() {
 	const headObj = (headHandler(headItems));
+	console.log(headObj.url);
 
 	// const bodyArray = (bodyHandler(bodyItems));
 	// const selectedBody = bodyStore.getState().bodyUrl.bodyUrl;
@@ -25,10 +26,10 @@ export default function Create() {
 
 	return (
 		<div className="container">
-			<ImgCard />
-			{/* head={selectedHead}
-				body={selectedBody}
-				legs={selectedBottom} */}
+			<ImgCard
+				head={headObj.url}
+				headAlt={headObj.alt}
+			/>
 			<div className="Selector">
 				<SelectorCard
 					title="HEAD"

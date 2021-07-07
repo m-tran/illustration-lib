@@ -11,8 +11,9 @@ export default function headHandler(images) {
 	let imgArray = [];
 
 	const [key, setKey] = useState('');
+	const [link, setLink] = useState('');
 
-	const handleOnClick = (e) => {
+	const handleOnClick = async (e) => {
 		const action = {
 			type: 'SELECTED',
 			payload: e,
@@ -25,19 +26,27 @@ export default function headHandler(images) {
 			payload: newKey,
 		});
 
-		axios
-			.get('/head', {
-				params: {
-					id: newKey.headKey,
-				},
-			})
-			.then((res) => {
-				console.log(res.data);
-			})
-			.catch((error) => {
-				console.log(error.response.data);
-				throw error;
-			});
+		const getSrc = (imgId) => (
+			axios
+				.get('/head', {
+					params: {
+						id: imgId,
+					},
+				})
+				.then((res) => {
+					const linkData = res.data;
+					return linkData;
+				})
+				.catch((err) => {
+					throw err;
+				})
+
+		);
+
+		const imgId = newKey.headKey;
+		const selectedSrc = await getSrc(imgId);
+
+		setLink(selectedSrc);
 	};
 
 	if (images !== undefined) {
@@ -59,6 +68,8 @@ export default function headHandler(images) {
 	const image = {
 		imageArray: imgArray,
 		imgKey: key.headKey,
+		url: link,
+		alt: key.headKey,
 	};
 
 	return (image);
