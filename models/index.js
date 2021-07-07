@@ -1,3 +1,5 @@
 module.exports = {
-    Image: require("./Image"),
+	Head: require("./Head"),
+	Body: require("./Body"),
+	Bottom: require("./Bottom"),
 }

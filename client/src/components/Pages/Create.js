@@ -1,34 +1,27 @@
 import React from 'react';
-
 import ImgCard from '../Card/ImageCard';
 import SelectorCard from '../Card/SelectorCard';
-
 import headItems from '../Objects/headItems';
 import headHandler from '../../handlers/headHandler';
-
-// import bodyItems from '../Objects/bodyItems';
-// import bodyHandler from '../../handlers/bodyHandler';
-// import bodyStore from '../../store/bodyStore';
-
-// import bottomItems from '../Objects/bottomItems';
-// import bottomHandler from '../../handlers/bottomHandler';
-// import bottomStore from '../../store/bottomStore';
+import bodyItems from '../Objects/bodyItems';
+import bodyHandler from '../../handlers/bodyHandler';
+import bottomItems from '../Objects/bottomItems';
+import bottomHandler from '../../handlers/bottomHandler';
 
 export default function Create() {
 	const headObj = (headHandler(headItems));
-	console.log(headObj.url);
-
-	// const bodyArray = (bodyHandler(bodyItems));
-	// const selectedBody = bodyStore.getState().bodyUrl.bodyUrl;
-
-	// const bottomArray = (bottomHandler(bottomItems));
-	// const selectedBottom = bottomStore.getState().bottomUrl.bottomUrl;
+	const bodyObj = (bodyHandler(bodyItems));
+	const bottomObj = (bottomHandler(bottomItems));
 
 	return (
 		<div className="container">
 			<ImgCard
 				head={headObj.url}
 				headAlt={headObj.alt}
+				body={bodyObj.url}
+				bodyAlt={bodyObj.alt}
+				bottom={bottomObj.url}
+				bottomAlt={bottomObj.alt}
 			/>
 			<div className="Selector">
 				<SelectorCard
@@ -37,11 +30,11 @@ export default function Create() {
 				/>
 				<SelectorCard
 					title="BODY"
-				// items={bodyArray.imageArray}
+					items={bodyObj.imageArray}
 				/>
 				<SelectorCard
 					title="LEGS"
-				// items={bottomArray.imageArray}
+					items={bottomObj.imageArray}
 				/>
 			</div>
 		</div>

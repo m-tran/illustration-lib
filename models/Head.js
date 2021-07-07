@@ -5,9 +5,9 @@ const schema = new mongoose.Schema({
 	url: String,
 });
 
-const Image = mongoose.model("Image", schema);
+const Head = mongoose.model("Head", schema);
 
-Image.insertMany([
+Head.insertMany([
 	{
 		name: 'bobWavy',
 		url: 'wavy-bob.png',
@@ -34,4 +34,4 @@ Image.insertMany([
 	}
 ]);
 
-module.exports = Image;
+module.exports = Head;

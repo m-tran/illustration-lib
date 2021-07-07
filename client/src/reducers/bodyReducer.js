@@ -1,5 +1,5 @@
 const initialState = {
-	bodyUrl: '',
+	bodyKey: '',
 };
 
 export default function bodyReducer(state = initialState, action) {
@@ -7,7 +7,7 @@ export default function bodyReducer(state = initialState, action) {
 		case 'SELECTED':
 			return {
 				...state,
-				bodyUrl: action.payload,
+				bodyKey: action.payload,
 			};
 		default:
 			return state;

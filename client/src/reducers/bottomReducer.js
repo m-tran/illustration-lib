@@ -1,5 +1,5 @@
 const initialState = {
-	bottomUrl: '',
+	bottomKey: '',
 };
 
 export default function bottomReducer(state = initialState, action) {
@@ -7,7 +7,7 @@ export default function bottomReducer(state = initialState, action) {
 		case 'SELECTED':
 			return {
 				...state,
-				bottomUrl: action.payload,
+				bottomKey: action.payload,
 			};
 		default:
 			return state;
