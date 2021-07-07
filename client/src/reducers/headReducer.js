@@ -1,5 +1,5 @@
 const initialState = {
-	headUrl: '',
+	headKey: '',
 };
 
 export default function headReducer(state = initialState, action) {
@@ -7,7 +7,7 @@ export default function headReducer(state = initialState, action) {
 		case 'SELECTED':
 			return {
 				...state,
-				headUrl: action.payload,
+				headKey: action.payload,
 			};
 		default:
 			return state;

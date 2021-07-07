@@ -3,47 +3,44 @@ import React from 'react';
 import ImgCard from '../Card/ImageCard';
 import SelectorCard from '../Card/SelectorCard';
 
-import headItems from '../Arrays/HeadItems';
+import headItems from '../Objects/headItems';
 import headHandler from '../../handlers/headHandler';
-import headStore from '../../store/headStore';
 
-import bodyItems from '../Arrays/bodyItems';
-import bodyHandler from '../../handlers/bodyHandler';
-import bodyStore from '../../store/bodyStore';
+// import bodyItems from '../Objects/bodyItems';
+// import bodyHandler from '../../handlers/bodyHandler';
+// import bodyStore from '../../store/bodyStore';
 
-import bottomItems from '../Arrays/bottomItems';
-import bottomHandler from '../../handlers/bottomHandler';
-import bottomStore from '../../store/bottomStore';
+// import bottomItems from '../Objects/bottomItems';
+// import bottomHandler from '../../handlers/bottomHandler';
+// import bottomStore from '../../store/bottomStore';
 
 export default function Create() {
-	const headArray = (headHandler(headItems));
-	const selectedHead = headStore.getState().headUrl.headUrl;
+	const headObj = (headHandler(headItems));
 
-	const bodyArray = (bodyHandler(bodyItems));
-	const selectedBody = bodyStore.getState().bodyUrl.bodyUrl;
+	// const bodyArray = (bodyHandler(bodyItems));
+	// const selectedBody = bodyStore.getState().bodyUrl.bodyUrl;
 
-	const bottomArray = (bottomHandler(bottomItems));
-	const selectedBottom = bottomStore.getState().bottomUrl.bottomUrl;
+	// const bottomArray = (bottomHandler(bottomItems));
+	// const selectedBottom = bottomStore.getState().bottomUrl.bottomUrl;
 
 	return (
 		<div className="container">
-			<ImgCard
-				head={selectedHead}
+			<ImgCard />
+			{/* head={selectedHead}
 				body={selectedBody}
-				legs={selectedBottom}
-			/>
+				legs={selectedBottom} */}
 			<div className="Selector">
 				<SelectorCard
 					title="HEAD"
-					items={headArray.imageArray}
+					items={headObj.imageArray}
 				/>
 				<SelectorCard
 					title="BODY"
-					items={bodyArray.imageArray}
+				// items={bodyArray.imageArray}
 				/>
 				<SelectorCard
 					title="LEGS"
-					items={bottomArray.imageArray}
+				// items={bottomArray.imageArray}
 				/>
 			</div>
 		</div>

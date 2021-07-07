@@ -22,16 +22,16 @@ const BlueBox = styled.div`
 `;
 
 export default function BlackHalf({ image, alt }) {
-  return (
-	<div className="BlackHalf">
-		<BgCard>
-			<div className="WhiteCard">
-				<div className="imgCtn">
-					<img className="imgFit" src={image} alt={alt} />
+	return (
+		<div className="BlackHalf">
+			<BgCard>
+				<div className="WhiteCard">
+					<div className="imgCtn">
+						<img className="imgFit" src={image} alt={alt} />
+					</div>
+					<BlueBox className="blueBox" />
 				</div>
-				<BlueBox className="blueBox" />
-			</div>
-		</BgCard>
-	</div>
-  );
+			</BgCard>
+		</div>
+	);
 }

@@ -3,7 +3,7 @@ import {
 	BrowserRouter as Router,
 	Route,
 	Switch,
-  } from 'react-router-dom';
+} from 'react-router-dom';
 
 import AppBar from './components/AppBar/AppBar';
 import Landing from './components/Pages/Landing';

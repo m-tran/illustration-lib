@@ -8,10 +8,10 @@ import temp from '../../images/temp.png';
 import '../../App.css';
 
 export default function Landing() {
-  return (
-	<div className="container">
-		<BlackHalf image={temp} alt="intro" />
-		<WhiteHalf />
-	</div>
-  );
+	return (
+		<div className="container">
+			<BlackHalf image={temp} alt="intro" />
+			<WhiteHalf />
+		</div>
+	);
 }
