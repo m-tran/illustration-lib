@@ -14,21 +14,36 @@ const responsive = {
 };
 
 export default function Gallery({ items }) {
-	const [activeIndex, setActiveIndex] = useState(0);
-	// const [items] = useState(createItems(5, [setActiveIndex]));
 	const Arr = { items };
 
-	const slidePrev = () => {
-		if (activeIndex > 0) {
-			setActiveIndex(activeIndex - 1);
-		}
-	};
+	const thumbItems = (itemsArr, [setThumbIndex, setThumbAnimation]) => itemsArr.map((item, i) => (
+		<div className="thumb" role="presentation" onKeyDown="" onClick={() => [setThumbIndex(i), setThumbAnimation(true)]}>
+			{item}
+		</div>
+	));
+
+	const [thumbIndex, setThumbIndex] = useState(0);
+	const [thumbAnimation, setThumbAnimation] = useState(false);
+	const [thumbs] = useState(thumbItems(Arr.items, [setThumbIndex, setThumbAnimation]));
+
 	const slideNext = () => {
-		if (activeIndex < (Arr.items.length - 3)) {
-			setActiveIndex(activeIndex + 1);
+		if (!thumbAnimation && thumbIndex < thumbs.length - 1) {
+			setThumbAnimation(true);
+			setThumbIndex(thumbIndex + 1);
 		}
 	};
-	const syncActiveIndex = ({ item }) => setActiveIndex(item);
+
+	const slidePrev = () => {
+		if (!thumbAnimation && thumbIndex > 0) {
+			setThumbAnimation(true);
+			setThumbIndex(thumbIndex - 1);
+		}
+	};
+
+	const syncThumbs = (e) => {
+		setThumbIndex(e.item);
+		setThumbAnimation(false);
+	};
 
 	return [
 		<div>
@@ -38,10 +53,10 @@ export default function Gallery({ items }) {
 			mouseTracking
 			disableDotsControls
 			disableButtonsControls
-			items={items}
-			activeIndex={activeIndex}
+			items={thumbs}
+			activeIndex={thumbIndex}
 			responsive={responsive}
-			onSlideChanged={syncActiveIndex}
+			onSlideChanged={syncThumbs}
 		/>,
 		<div>
 			<RoundButton bgcolor="white" image={next} onClick={slideNext} />

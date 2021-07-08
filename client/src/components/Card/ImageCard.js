@@ -15,6 +15,13 @@ const ImgCtn = styled.div`
 	position: relative;
 `;
 
+const Image = styled.img`
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+	position: absolute;
+`;
+
 export default function ImageCard({
 	head, headAlt, body, bodyAlt, bottom, bottomAlt,
 }) {
@@ -61,9 +68,24 @@ export default function ImageCard({
 	return (
 		<div className="ImageCard">
 			<ImgCtn>
-				<img className="selectedImg" id="head" src={headLink} alt={heAlt.headAlt} />
-				<img className="selectedImg" id="body" src={bodyLink} alt={bdAlt.bodyAlt} />
-				<img className="selectedImg" id="legs" src={bottomLink} alt={btAlt.bottomAlt} />
+				<Image
+					className="selectedImg"
+					id="head"
+					src={headLink}
+					alt={heAlt.headAlt}
+				/>
+				<Image
+					className="selectedImg"
+					id="body"
+					src={bodyLink}
+					alt={bdAlt.bodyAlt}
+				/>
+				<Image
+					className="selectedImg"
+					id="legs"
+					src={bottomLink}
+					alt={btAlt.bottomAlt}
+				/>
 			</ImgCtn>
 		</div>
 	);

@@ -65,8 +65,6 @@ export default function bottomHandler(images) {
 		});
 	}
 
-	console.log(link);
-
 	const image = {
 		imageArray: imgArray,
 		imgKey: key.bottomKey,

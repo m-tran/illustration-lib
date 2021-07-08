@@ -16,6 +16,7 @@ export default function Create() {
 	return (
 		<div className="container">
 			<ImgCard
+				key={headObj.imgKey}
 				head={headObj.url}
 				headAlt={headObj.alt}
 				body={bodyObj.url}
