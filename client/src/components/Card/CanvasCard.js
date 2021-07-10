@@ -3,6 +3,7 @@ import mergeImages from 'merge-images-v2';
 import styled from 'styled-components';
 import { getColor } from '../../Theme';
 
+import Button from '../Buttons/Button';
 import bobWavy from '../../images/heads/wavy-bob.png';
 import jacket from '../../images/body/jacket.png';
 import pants from '../../images/bottom/pants.png';
@@ -46,13 +47,22 @@ export default function CanvasCard({
 	}
 
 	mergeImages([headLink, bodyLink, bottomLink])
-	.then((b64) => { document.querySelector('img').src = b64; });
+		.then((b64) => {
+			document.querySelector('.download').href = b64;
+			document.querySelector('img').src = b64;
+		});
 
 	return (
-		<div className="ImageCard">
-			<ImgCtn>
-				<img className="selectedImg" alt="illustration" />
-			</ImgCtn>
+		<div>
+			{/* eslint-disable-next-line */}
+			<a download="Open Il" className="download">
+				<Button bgcolor="blue" color="white" text="download img" />
+			</a>
+			<div className="ImageCard">
+				<ImgCtn>
+					<img className="selectedImg" alt="illustration" />
+				</ImgCtn>
+			</div>
 		</div>
 	);
 }
