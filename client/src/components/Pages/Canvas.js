@@ -18,6 +18,8 @@ export default function Create() {
 			<CanvasCard
 				key={headObj.imgKey}
 				head={headObj.url}
+				body={bodyObj.url}
+				bottom={bottomObj.url}
 			/>
 			<div className="Selector">
 				<SelectorCard
