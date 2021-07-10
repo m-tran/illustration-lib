@@ -8,6 +8,7 @@ import {
 import AppBar from './components/AppBar/AppBar';
 import Landing from './components/Pages/Landing';
 import Create from './components/Pages/Create';
+import Canvas from './components/Pages/Canvas';
 
 import './App.css';
 
@@ -21,6 +22,7 @@ function App() {
 				<Switch>
 					<Route exact path="/"><Landing /></Route>
 					<Route path="/create"><Create /></Route>
+					<Route path="/canvas"><Canvas /></Route>
 				</Switch>
 			</Router>
 		</div>
