@@ -11,6 +11,10 @@ const Btn = styled.button`
 	border: none;
 	background-color: ${(props) => (getColor(props.bgcolor))};
 	color: ${(props) => (getColor(props.color))};
+	&:hover {
+		cursor: pointer;
+		opacity: 0.75;
+	}
 `;
 
 export default function Button({

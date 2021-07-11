@@ -17,7 +17,12 @@ export default function Gallery({ items }) {
 	const Arr = { items };
 
 	const thumbItems = (itemsArr, [setThumbIndex, setThumbAnimation]) => itemsArr.map((item, i) => (
-		<div className="thumb" role="presentation" onKeyDown="" onClick={() => [setThumbIndex(i), setThumbAnimation(true)]}>
+		<div
+			className="thumb"
+			role="presentation"
+			onKeyDown={() => [setThumbIndex(i), setThumbAnimation(true)]}
+			onClick={() => [setThumbIndex(i), setThumbAnimation(true)]}
+		>
 			{item}
 		</div>
 	));

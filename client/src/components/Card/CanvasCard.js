@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import mergeImages from 'merge-images-v2';
 import styled from 'styled-components';
-// import { getColor } from '../../Theme';
 
 import Button from '../Buttons/Button';
 import bobWavy from '../../images/heads/wavy-bob.png';
@@ -68,18 +67,16 @@ export default function CanvasCard({
 		bottomLink = `/images/bottom/${bottomState}`;
 	}
 
-	const merge = (x, y, z) => {
-		mergeImages([x, y, z])
-			.then((b64) => {
-				document.querySelector('.download').href = b64;
-				Image.src = b64;
-			});
+	const handleOnClick = async (x, y, z) => {
+		const b64 = mergeImages([x, y, z]);
+		document.querySelector('.download').href = await b64;
+		Image.src = await b64;
 	};
 
 	return (
 		<div>
 			{/* eslint-disable-next-line */}
-			<a onClick={merge(headLink, bodyLink, bottomLink)} download="Open Il" className="download">
+			<a onMouseDown={() => handleOnClick(headLink, bodyLink, bottomLink)} download="Open Il" className="download">
 				<Button bgcolor="blue" color="white" text="download img" />
 			</a>
 			<div className="ImageCard">
