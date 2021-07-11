@@ -13,7 +13,9 @@ function AppBar() {
 					<Link to="/canvas">
 						<li>create</li>
 					</Link>
-					<li>about</li>
+					<Link to="/about">
+						<li>about</li>
+					</Link>
 				</ul>
 			</div>
 		</div>

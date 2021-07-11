@@ -10,6 +10,7 @@ import Footer from './components/Footer/Footer';
 import Landing from './components/Pages/Landing';
 import Create from './components/Pages/Create';
 import Canvas from './components/Pages/Canvas';
+import About from './components/Pages/About';
 
 import './App.css';
 
@@ -24,6 +25,7 @@ function App() {
 					<Route exact path="/"><Landing /></Route>
 					<Route path="/create"><Create /></Route>
 					<Route path="/canvas"><Canvas /></Route>
+					<Route path="/about"><About /></Route>
 				</Switch>
 				<Footer />
 			</Router>

@@ -17,12 +17,12 @@ export default function Footer() {
 				</Link>
 			</div>
 			<div>
-				<p>Create</p>
-				<p>About</p>
+				<p>create</p>
+				<p>about</p>
 				<br />
 				<br />
-				<p>A Project by Michelle Tran</p>
-				<p>Based in San Francisco</p>
+				<p>a project by Michelle Tran</p>
+				<p>based in San Francisco</p>
 			</div>
 			<div className="icons">
 				<FontAwesomeIcon icon={faAt} className="icon" />
