@@ -3,6 +3,10 @@ html, body {
 	margin: 0;
 }
 
+body {
+	min-height: 100%;
+}
+
 *{
 	box-sizing: border-box;
 	padding: 0;
@@ -19,13 +23,16 @@ html, body {
 header {
 	grid-column: 1/-1;
 	grid-row: 1/2;
-	height: 10vh;
+	height: 5vh;
+	position: fixed;
+	width: 100%;
 }
 
 .container {
 	grid-column: 1/-1;
 	grid-row: 2/3;
-	height: 90vh;
+	margin-top: 5vh;
+	height: 95vh;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }

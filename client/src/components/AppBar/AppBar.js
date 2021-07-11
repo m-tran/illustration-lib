@@ -1,23 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './AppBar.css';
-
-import styled from 'styled-components';
-import { getColor } from '../../Theme';
-
-const Blbg = styled.div`
-	background-color: ${getColor('black')};
-	color: ${getColor('white')};
-`;
 
 function AppBar() {
 	return (
-		<div className="AppBar">
-			<Blbg className="AppBarBl">
+		<div className="AppBar AppBarWh">
+			<Link to="/">
 				<p>openIL</p>
-			</Blbg>
-			<div className="AppBarWh">
+			</Link>
+			<div>
 				<ul>
-					<li>create</li>
+					<Link to="/canvas">
+						<li>create</li>
+					</Link>
 					<li>contact</li>
 				</ul>
 			</div>

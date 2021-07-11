@@ -15,10 +15,10 @@ import './App.css';
 function App() {
 	return (
 		<div className="App">
-			<header>
-				<AppBar />
-			</header>
 			<Router>
+				<header>
+					<AppBar />
+				</header>
 				<Switch>
 					<Route exact path="/"><Landing /></Route>
 					<Route path="/create"><Create /></Route>
