@@ -20,7 +20,7 @@ const Body = styled.div`
 export default function About() {
 	return (
 		<div className="container about">
-			<Title className="subcontainer">
+			<Title className="subtitle">
 				<h1>Illustrations should be open for everyone.</h1>
 			</Title>
 			<Body className="subbody">
