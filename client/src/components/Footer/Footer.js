@@ -17,17 +17,27 @@ export default function Footer() {
 				</Link>
 			</div>
 			<div>
-				<p>create</p>
-				<p>about</p>
+				<Link to="/canvas">
+					<p>create</p>
+				</Link>
+				<Link to="/about">
+					<p>about</p>
+				</Link>
 				<br />
 				<br />
 				<p>a project by Michelle Tran</p>
 				<p>based in San Francisco</p>
 			</div>
 			<div className="icons">
-				<FontAwesomeIcon icon={faAt} className="icon" />
-				<FontAwesomeIcon icon={faLinkedinIn} className="icon" />
-				<FontAwesomeIcon icon={faGithub} className="icon" />
+				<a href="mailto:mptran0101@berkeley.edu">
+					<FontAwesomeIcon icon={faAt} className="icon" />
+				</a>
+				<a href="https://www.linkedin.com/in/michelle-tran-282399b4/" target="blank">
+					<FontAwesomeIcon icon={faLinkedinIn} className="icon" />
+				</a>
+				<a href="https://github.com/m-tran/illustration-lib" target="blank">
+					<FontAwesomeIcon icon={faGithub} className="icon" />
+				</a>
 			</div>
 		</div>
 	);
