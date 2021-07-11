@@ -8,13 +8,15 @@ import bodyHandler from '../../handlers/bodyHandler';
 import bottomItems from '../Objects/bottomItems';
 import bottomHandler from '../../handlers/bottomHandler';
 
+import './Canvas.css';
+
 export default function Create() {
 	const headObj = (headHandler(headItems));
 	const bodyObj = (bodyHandler(bodyItems));
 	const bottomObj = (bottomHandler(bottomItems));
 
 	return (
-		<div className="container">
+		<div className="container canvas">
 			<CanvasCard
 				key={headObj.imgKey}
 				head={headObj.url}

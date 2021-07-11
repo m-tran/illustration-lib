@@ -14,7 +14,7 @@ body {
   }
 
 .App {
-	height: 100vh;
+	height: 100%;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 	grid-gap: 0px;
@@ -35,4 +35,14 @@ header {
 	height: 95vh;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+}
+
+.footer {
+	grid-column: 1/-1;
+	grid-row: 3/4;
+	height: 30vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 4rem 4rem 1rem 4rem;
+	border-top: 1px solid #dfdfdf;
 }

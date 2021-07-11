@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 
 import AppBar from './components/AppBar/AppBar';
+import Footer from './components/Footer/Footer';
 import Landing from './components/Pages/Landing';
 import Create from './components/Pages/Create';
 import Canvas from './components/Pages/Canvas';
@@ -24,6 +25,7 @@ function App() {
 					<Route path="/create"><Create /></Route>
 					<Route path="/canvas"><Canvas /></Route>
 				</Switch>
+				<Footer />
 			</Router>
 		</div>
 	);

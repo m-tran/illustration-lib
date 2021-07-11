@@ -1,0 +1,12 @@
+h1 {
+	font-size: calc(8px + 2vmin);
+}
+
+.icons {
+	display: flex;
+	flex-direction: row;
+}
+
+.icon {
+	margin-right: 1em;
+}
