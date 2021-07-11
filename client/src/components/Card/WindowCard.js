@@ -35,7 +35,7 @@ export default function WindowCard({
 				<BrowserBody>
 					{body}
 				</BrowserBody>
-				<Link to="/create">
+				<Link to="/canvas">
 					<Button bgcolor={bgcolor} color={color} text={text} />
 				</Link>
 			</Window>
