@@ -51,7 +51,7 @@ export default function Gallery({ items }) {
 	};
 
 	return [
-		<div>
+		<div className="roundbutton">
 			<RoundButton bgcolor="white" image={prev} onClick={slidePrev} />
 		</div>,
 		<AliceCarousel
@@ -63,7 +63,7 @@ export default function Gallery({ items }) {
 			responsive={responsive}
 			onSlideChanged={syncThumbs}
 		/>,
-		<div>
+		<div className="roundbutton">
 			<RoundButton bgcolor="white" image={next} onClick={slideNext} />
 		</div>,
 	];

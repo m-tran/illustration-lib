@@ -1,3 +1,9 @@
 .canvas {
 	margin-bottom: 4em;
 }
+
+.loader {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

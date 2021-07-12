@@ -14,6 +14,10 @@ const ImgCtn = styled.div`
 	height: 75vh;
 	width: 45vw;
 	position: relative;
+	@media screen and (max-width: 1024px) {
+		margin: 1em;
+		height: 30vh;
+	}
 `;
 
 const Image = styled.img`

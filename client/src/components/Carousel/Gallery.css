@@ -23,3 +23,13 @@
 	height: 100%;
 	object-fit: contain;
 }
+
+@media screen and (max-width: 1024px) {
+	.alice-carousel {
+		padding: 0;
+		width: 50%;
+	}
+	.roundbutton {
+		display: none;
+	}
+}

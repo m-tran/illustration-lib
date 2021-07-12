@@ -16,7 +16,7 @@ export default function WhiteHalf() {
 	return (
 		<div className="WhiteHalf">
 			<BgCard>
-				<WindowCard bgcolor="blue" color="white" title="openIL" body="(open source) illustration library" link="#" text="Begin ->" />
+				<WindowCard bgcolor="blue" color="white" title="openIL" body="(open source) illustration library" link="#" text="begin ->" />
 			</BgCard>
 		</div>
 	);

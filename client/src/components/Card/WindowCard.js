@@ -10,12 +10,22 @@ const Window = styled.div`
 	margin: 2em;
 	border: 1px solid ${getColor('black')};
 	background-color: ${getColor('white')};
+	@media screen and (max-width: 1024px) {
+		height: 50vh;
+		width: 100%;
+		border: none;
+		margin: 0;
+		overflow: hidden;
+	}
 `;
 
 const BrowserTab = styled.div`
 	padding: 0.25em 1em 0.25em 1em;
 	background-color: ${getColor('black')};
 	color: ${getColor('white')};
+	@media screen and (max-width: 1024px) {
+		display: none;
+	}
 `;
 
 const BrowserBody = styled.div`

@@ -23,6 +23,9 @@ const BrowserBody = styled.div`
 	padding: 1em;
 	max-width: 654px;
 	display: flex;
+	@media screen and (max-width: 1024px) {
+		padding: 0;
+	}
 `;
 
 export default function SelectorCard({
