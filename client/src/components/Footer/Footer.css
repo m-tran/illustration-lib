@@ -11,7 +11,8 @@ h1 {
 	margin-right: 1em;
 }
 
-.underline a {
+.underline p {
+	width: fit-content;
 	background: 
 	  linear-gradient(to right, white, white),
 	  linear-gradient(to right, #f6f6ff, blue, #0070ff);
@@ -21,7 +22,7 @@ h1 {
 	transition: background-size 400ms;
   }
   
-.underline a:hover,
-.underline a:focus {
+.underline p:hover,
+.underline p:focus {
 	background-size: 0 0.1em, 100% 0.1em;
 }

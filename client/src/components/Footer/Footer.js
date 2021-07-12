@@ -16,13 +16,15 @@ export default function Footer() {
 					<h1>openIL</h1>
 				</Link>
 			</div>
-			<div className="underline">
-				<Link to="/canvas">
-					<p>create</p>
-				</Link>
-				<Link to="/about">
-					<p>about</p>
-				</Link>
+			<div>
+				<div className="underline">
+					<Link to="/canvas">
+						<p>create</p>
+					</Link>
+					<Link to="/about">
+						<p>about</p>
+					</Link>
+				</div>
 				<br />
 				<br />
 				<p>a project by Michelle Tran</p>
