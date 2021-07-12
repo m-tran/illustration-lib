@@ -2,6 +2,7 @@
   "name": "illustration-lib",
   "version": "1.0.0",
   "engines": {
+	"npm": "6.x",
 	"node": "12.4.0"
   },
   "description": "an open source illustration library",
