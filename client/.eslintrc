@@ -1,8 +1,5 @@
 {
 	"parser": "babel-eslint",
-	"extends": [
-		"airbnb"
-	],
 	"rules": {
 		"indent": [1, "tab", { "SwitchCase": 1, "VariableDeclarator": 1 }],
         "no-tabs": 0,
