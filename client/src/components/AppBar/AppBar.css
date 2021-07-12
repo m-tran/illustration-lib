@@ -40,7 +40,22 @@
 	justify-content: space-between;
 }
 
-.AppBar li {
+.AppBar ul a {
 	margin-left: 2em;
 }
+
+.AppBar a {
+	background: 
+	  linear-gradient(to right, white, white),
+	  linear-gradient(to right, #f6f6ff, blue, #0070ff);
+	background-size: 100% 0.1em, 0 0.1em;
+	background-position: 100% 100%, 0 100%;
+	background-repeat: no-repeat;
+	transition: background-size 400ms;
+  }
+  
+  a:hover,
+  a:focus {
+	background-size: 0 0.1em, 100% 0.1em;
+  }
   

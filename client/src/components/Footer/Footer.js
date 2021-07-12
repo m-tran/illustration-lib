@@ -16,7 +16,7 @@ export default function Footer() {
 					<h1>openIL</h1>
 				</Link>
 			</div>
-			<div>
+			<div className="underline">
 				<Link to="/canvas">
 					<p>create</p>
 				</Link>
