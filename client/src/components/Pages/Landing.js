@@ -3,14 +3,14 @@ import React from 'react';
 import BlackHalf from '../Card/BlackHalf';
 import WhiteHalf from '../Card/WhiteHalf';
 
-import temp from '../../images/temp.png';
+import landing from '../../images/landing_v2.gif';
 
 import '../../App.css';
 
 export default function Landing() {
 	return (
 		<div className="container">
-			<BlackHalf image={temp} alt="intro" />
+			<BlackHalf image={landing} alt="intro" />
 			<WhiteHalf />
 		</div>
 	);
