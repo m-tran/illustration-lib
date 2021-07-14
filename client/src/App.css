@@ -19,6 +19,7 @@ body {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 	grid-gap: 0px;
+	width: 100vw;
 }
 
 header {
@@ -46,6 +47,8 @@ header {
 	grid-template-columns: 1fr 1fr;
 	width: 100%;
 	height: 100%;
+	padding-left: 2em;
+	padding-right: 2em;
 }
 
 .subbody {
@@ -56,6 +59,8 @@ header {
 	grid-template-columns: 1fr 1fr;
 	width: 100%;
 	height: 100%;
+	padding-left: 2em;
+	padding-right: 2em;
 }
 
 .footer {
@@ -90,5 +95,8 @@ a:visited {
 
 	.footer {
 		border-top: none;
+	}
+	.about {
+		margin: 2em 0 0 0;
 	}
 }
