@@ -27,6 +27,7 @@
 		"react-loader-spinner": "^4.0.0",
 		"react-router-dom": "^5.2.0",
 		"react-scripts": "4.0.3",
+		"react-spring": "^9.2.4",
 		"react-touch-carousel": "^0.9.4",
 		"redux": "^4.1.0",
 		"styled-components": "^5.3.0",

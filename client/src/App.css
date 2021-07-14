@@ -31,7 +31,7 @@ header {
 
 .container {
 	grid-column: 1/-1;
-	grid-row: 2/3;
+	grid-row: 2/4;
 	margin-top: 5vh;
 	height: 95vh;
 	display: grid;
@@ -60,7 +60,7 @@ header {
 
 .footer {
 	grid-column: 1/-1;
-	grid-row: 3/4;
+	grid-row: 4/5;
 	height: 30vh;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;

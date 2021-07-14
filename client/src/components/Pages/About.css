@@ -1,0 +1,19 @@
+.imgCtn {
+	background-color: white;
+	width: 75%;
+	height: 50%;
+	margin: 1em 0 1em 1em;
+	position: relative;
+	display: grid;
+	grid-row: 3/4;
+	grid-template-columns: 1fr;
+}
+
+.imgFit {
+	object-fit: cotain;
+	max-width: 100%;
+	height: auto;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}

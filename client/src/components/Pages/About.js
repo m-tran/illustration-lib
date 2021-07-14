@@ -2,7 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { getColor, getSize } from '../../Theme';
 
+import contact from '../../images/contact/contact.png';
+
 import '../../App.css';
+import './About.css';
 
 const Title = styled.div`
 	font-size: ${getSize('md')};
@@ -35,6 +38,9 @@ export default function About() {
 					<p>Interested? Contact us if you have an illustration in mind. OpenIL is open for everyone.</p>
 				</div>
 			</Body>
+			<div className="imgCtn">
+				<img className="imgFit" src={contact} alt="For everyone" />
+			</div>
 		</div>
 	);
 }
