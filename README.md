@@ -8,7 +8,7 @@ OpenIL (Open Illustration Library) is a desktop and mobile friendly illustration
 
 ## Features
 
-- Geenerate illustration
+- Generate illustration
 - Share by copying edit URL or image URL
 - Download illustration as PNG
 - ✨Future Dev✨ Download SVG
